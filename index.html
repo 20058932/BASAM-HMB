@@ -1,64 +1,136 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>BASAM HMB - بيع وشراء الهواتف</title>
-  <style>
-    body {font-family: 'Cairo', sans-serif; background: #f5f5f5; margin: 0; text-align: center;}
-    header {background: #0d6efd; color: white; padding: 20px;}
-    h1 {margin: 0;}
-    .products {display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 30px;}
-    .card {background: white; border-radius: 10px; padding: 15px; width: 250px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
-    .card img {width: 100%; height: 200px; object-fit: cover; border-radius: 10px;}
-    .btn {background: #25D366; color: white; padding: 10px; border-radius: 5px; text-decoration: none; display: block; margin-top: 10px;}
-    footer {background: #222; color: white; padding: 15px; margin-top: 30px;}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BASAM HMB | بيع وشراء الهواتف</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#222;
+}
+
+header{
+background:linear-gradient(135deg,#0d6efd,#0056d6);
+color:#fff;
+padding:25px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+header img{
+width:120px;
+height:120px;
+border-radius:50%;
+background:#fff;
+padding:8px;
+margin-bottom:15px;
+}
+
+header h1{
+font-size:38px;
+font-weight:900;
+}
+
+header p{
+font-size:18px;
+margin-top:8px;
+}
+
+nav{
+background:#fff;
+display:flex;
+justify-content:center;
+gap:20px;
+padding:15px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav a{
+text-decoration:none;
+color:#0d6efd;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff9800;
+}
+
+.hero{
+padding:60px 20px;
+text-align:center;
+background:linear-gradient(to left,#0d6efd,#3b82f6);
+color:white;
+}
+
+.hero h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+line-height:2;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+background:#ff9800;
+color:#fff;
+text-decoration:none;
+font-size:20px;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#e68900;
+transform:scale(1.05);
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>BASAM HMB</h1>
-    <p>بيع وشراء الهواتف - ضمان وأسعار منافسة</p>
-  </header>
 
-  <div class="products">
-    <div class="card">
-      <img src="hope.jpg" alt="Hopephone">
-      <h3>Hopephone H8700mini</h3>
-      <p>بطارية 6800 - كشاف - شريحتين</p>
-      <a class="btn" href="https://wa.me/249997005907?text=عايز Hopephone H8700mini كم السعر؟">اطلب عبر واتساب</a>
-    </div>
+<header>
+<img src="logo.png" alt="BASAM HMB">
+<h1>BASAM HMB</h1>
+<p>بيع وشراء الهواتف الجديدة والمستعملة بأفضل الأسعار</p>
+</header>
 
-    <div class="card">
-      <img src="hmobile15.jpg" alt="H-mobile">
-      <h3>H-mobile 15mini</h3>
-      <p>3 شرائح - جافا - كشاف قوي</p>
-      <a class="btn" href="https://wa.me/249997005907?text=عايز H-mobile 15mini كم السعر؟">اطلب عبر واتساب</a>
-    </div>
+<nav>
+<a href="#">الرئيسية</a>
+<a href="#">الهواتف</a>
+<a href="#">العروض</a>
+<a href="#">من نحن</a>
+<a href="#">اتصل بنا</a>
+</nav>
 
-    <div class="card">
-      <img src="onyala.jpg" alt="Onyala">
-      <h3>Onyala N128</h3>
-      <p>بطارية قوية - راديو - كاميرا</p>
-      <a class="btn" href="https://wa.me/249997005907?text=عايز Onyala N128 كم السعر؟">اطلب عبر واتساب</a>
-    </div>
+<section class="hero">
+<h2>مرحباً بكم في BASAM HMB</h2>
 
-    <div class="card">
-      <img src="kgent.jpg" alt="K-GENT">
-      <h3>K-GENT XB1805</h3>
-      <p>شاشة 2.4 بوصة - Type-C - راديو</p>
-      <a class="btn" href="https://wa.me/249997005907?text=عايز K-GENT XB1805 كم السعر؟">اطلب عبر واتساب</a>
-    </div>
+<p>
+أفضل مكان لشراء وبيع الهواتف الذكية.
+أحدث الأجهزة، أسعار منافسة، وضمان على الجودة.
+</p>
 
-    <div class="card">
-      <img src="h-mobile.jpg" alt="H-mobile">
-      <h3>H-mobile</h3>
-      <p>3 كاميرات - تصميم عصري</p>
-      <a class="btn" href="https://wa.me/249997005907?text=عايز H-mobile كم السعر؟">اطلب عبر واتساب</a>
-    </div>
-  </div>
-
-  <footer>
-    <p>للتواصل: 249997005907 © 2026 BASAM HMB</p>
-  </footer>
-</body>
-</html>
+<a href="#phones" class="btn">تصفح الهواتف</a>
+</section>
